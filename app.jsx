@@ -1,3 +1,7 @@
+function sum(arr) {
+  return arr.reduce((a, b ) => a + b, 0);
+}
+
 class Question extends React.Component {
   constructor(props) {
     super(props);
@@ -47,7 +51,7 @@ class QuestionSection extends React.Component {
   reportScore(questionIndex, score) {
     var questionScores = this.state.questionScores;
     questionScores[questionIndex] = score;
-    var statScore = (questionScores.reduce((a, b) => a + b, 0) / this.maxScore) * 20
+    var statScore = (sum(questionScores) / this.maxScore) * 20
 
     this.setState({
       questionScores: questionScores,
@@ -171,7 +175,7 @@ class App extends React.Component {
           <div class="card">
             <h2 class="card-header">
               Stat total: <span class="badge badge-info">
-                {this.state.sectionScores.values().reduce((a, b) => a+b, 0)}
+                {sum(this.state.sectionScores.values())}
               </span>
             </h2>
           </div>
