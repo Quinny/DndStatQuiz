@@ -185,7 +185,6 @@ class App extends React.Component {
   }
 }
 
-// Fetch the feed from the API and render it.
 $(document).ready(() => {
   ReactDOM.render(
     <App />,
