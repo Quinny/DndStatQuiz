@@ -115,8 +115,6 @@ class QuestionSection extends React.Component {
   }
 }
 
-
-
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -331,9 +329,8 @@ class App extends React.Component {
           options: [
             { body: 'Very easily, I\'m often ill', score: 1 },
             { body: 'Fairly easily, I catch most common illnesses', score: 2 },
-            { body: 'I get sick occasionally, but recover quickly', score: 5 },
-            { body: 'Rarely get sick', score: 7 },
-            { body: 'Never get sick', score: 10 }
+            { body: 'I get sick occasionally, but recover quickly', score: 4 },
+            { body: 'I never get sick', score: 8 }
           ]
         },
         {
@@ -341,8 +338,8 @@ class App extends React.Component {
           options: [
             { body: 'Poorly, I\'m easily overwhelmed', score: 1 },
             { body: 'I can manage some stress, but too much gets to me', score: 2 },
-            { body: 'I handle stress fairly well', score: 5 },
-            { body: 'I thrive under pressure', score: 10 },
+            { body: 'I handle stress fairly well', score: 4 },
+            { body: 'I thrive under pressure', score: 6 },
           ]
         },
         {
@@ -356,10 +353,10 @@ class App extends React.Component {
         {
           body: 'How many hours per night do you typically sleep?',
           options: [
-            { body: 'less than 4', score: 1 },
-            { body: '4-6', score: 3 },
-            { body: '6-8', score: 5 },
-            { body: '8+', score: 9 },
+            { body: 'less than 4', score: 0 },
+            { body: '4-6', score: 1 },
+            { body: '6-8', score: 2 },
+            { body: '8+', score: 4 },
           ]
         }
       ]
