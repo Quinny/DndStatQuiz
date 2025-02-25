@@ -460,7 +460,7 @@ class App extends React.Component {
       );
     });
 
-    var sectionScores = this.state.sectionScores.entries().map((entry) => {
+    var sectionScores = Array.from(this.state.sectionScores).map((entry) => {
       var [sectionTitle, score] = entry
       return (
       <h2 class="card-header">
@@ -478,7 +478,7 @@ class App extends React.Component {
             {sectionScores}
             <h2 class="card-header">
               Stat total: <span class="badge badge-info">
-                {sum(this.state.sectionScores.values())}
+                {sum(Array.from(this.state.sectionScores.values()))}
               </span>
             </h2>
           </div>
