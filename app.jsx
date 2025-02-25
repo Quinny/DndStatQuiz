@@ -297,7 +297,7 @@ class App extends React.Component {
           options: [
             { body: 'My hands shake a bit, it\'s always a challenge', score: 0 },
             { body: 'I can usually do it after a couple of tries', score: 4 },
-            { body: 'I have a steady hand; threading a needle is no problem', score:6  },
+            { body: 'I have a steady hand; threading a needle is no problem', score: 6 },
             { body: 'I can thread a needle quickly and accurately', score: 10 },
           ]
         },
@@ -463,9 +463,9 @@ class App extends React.Component {
     var sectionScores = Array.from(this.state.sectionScores).map((entry) => {
       var [sectionTitle, score] = entry
       return (
-      <h2 class="card-header">
-        {sectionTitle + ":"} <span class="badge badge-info">{score}</span>
-      </h2>
+        <h2 class="card-header">
+          {sectionTitle + ":"} <span class="badge badge-info">{score}</span>
+        </h2>
       )
     })
 
