@@ -1,5 +1,7 @@
 # DND Stat Quiz
 
+[quinnftw.com/dnd/](http://www.quinnftw.com/dnd/)
+
 How to run:
 
 1. Clone this repo
