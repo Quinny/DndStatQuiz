@@ -1,6 +1,6 @@
 # DND Stat Quiz
 
-[quinnftw.com/dnd/](http://www.quinnftw.com/dnd/)
+[quinnftw.com/dnd/](http://quinnftw.com/dnd/)
 
 How to run:
 
